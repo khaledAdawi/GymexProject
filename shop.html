@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHOP</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/shop.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="#">
+        <img src="./assets/img/logo/logo.png" alt="Logo" width="200" class="me-2" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link shop" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="text-dark"><i class="bi bi-search fs-5"></i></a>
+
+          <a href="#" class="text-dark d-flex align-items-center text-decoration-none">
+            <i class="bi bi-person fs-5 me-1"></i>
+            <span class="fw-normal">Sign In / Register</span>
+          </a>
+
+          <a href="#" class="position-relative text-dark">
+            <i class="bi bi-heart fs-5"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-white">0</span>
+          </a>
+
+          <a href="#" class="position-relative text-dark">
+            <i class="bi bi-cart fs-5"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-white">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="shop-header">
+    <div class="overlay">
+      <h1>SHOP</h1>
+      <p>Home &gt; Shop</p>
+    </div>
+  </section>
+
+  <section class="shop-section py-5">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-3">
+          <h5 class="fw-bold mb-3">CATEGORIES</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">BodyTech (6)</a></li>
+            <li><a href="#">Multivitamins (7)</a></li>
+            <li><a href="#">Plant-Based Protein (1)</a></li>
+            <li><a href="#">Weight Loss (12)</a></li>
+            <li><a href="#">Whey Protein (5)</a></li>
+          </ul>
+
+          <h5 class="fw-bold mt-4 mb-2">PRICE</h5>
+          <input type="range" min="20" max="250" class="form-range" />
+          <p class="text-danger mt-1">Range : 20.00$ - 250.00$</p>
+
+          <h5 class="fw-bold mt-4 mb-2">COLOR</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="color-box" style="background-color: #e6d3b3"></span>
+            <span class="color-box" style="background-color: #000"></span>
+            <span class="color-box" style="background-color: #7e8aa2"></span>
+            <span class="color-box" style="background-color: #d3d3d3"></span>
+            <span class="color-box" style="background-color: #34caca"></span>
+            <span class="color-box" style="background-color: #f9c7d2"></span>
+            <span class="color-box" style="background-color: #f64d5a"></span>
+            <span class="color-box" style="background-color: #fff"></span>
+            <span class="color-box" style="background-color: #d3a81d"></span>
+          </div>
+
+          <h5 class="fw-bold mt-4 mb-2">SIZE</h5>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <button class="btn btn-outline-dark btn-sm">3g (4)</button>
+            <button class="btn btn-outline-dark btn-sm">4g (4)</button>
+            <button class="btn btn-outline-dark btn-sm">5g (4)</button>
+            <button class="btn btn-outline-dark btn-sm">6g (3)</button>
+          </div>
+
+          <h5 class="fw-bold mt-4 mb-2">BRANDS</h5>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a href="#" class="btn btn-outline-dark btn-sm">Business (2)</a>
+            <a href="#" class="btn btn-outline-dark btn-sm">Fitness Club (2)</a>
+            <a href="#" class="btn btn-outline-dark btn-sm">Gym (3)</a>
+            <a href="#" class="btn btn-outline-dark btn-sm">Instaplat (2)</a>
+            <a href="#" class="btn btn-outline-dark btn-sm">Istanbul (2)</a>
+            <a href="#" class="btn btn-outline-dark btn-sm">Pilates (1)</a>
+            <a href="#" class="btn btn-outline-dark btn-sm">Power (1)</a>
+            <a href="#" class="btn btn-outline-dark btn-sm">Pub.guru (2)</a>
+            <a href="#" class="btn btn-outline-dark btn-sm">Thebird (2)</a>
+            <a href="#" class="btn btn-outline-dark btn-sm">Thunder (2)</a>
+          </div>
+
+          <h5 class="fw-bold mt-4 mb-3">FEATURE PRODUCT</h5>
+          <div class="feature-product">
+            <div class="item">
+              <img src="assets/img/shop/products/product1.jpg" alt="Bucked Up Racked" />
+              <div>
+                <p class="item-title">Bucked Up Racked</p>
+                <p class="item-price">
+                  <del>200.00$</del>
+                  <span class="text-danger">116.00$</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="assets/img/shop/products/product2.jpg" alt="Nitrotech Whey Protein" />
+              <div>
+                <p class="item-title">Nitrotech Whey Protein</p>
+                <p class="item-price">
+                  <del>250.00$</del>
+                  <span class="text-danger">200.00$</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="assets/img/shop/products/product3.jpg" alt="Prime Mass Vanilla" />
+              <div>
+                <p class="item-title">Prime Mass Vanilla</p>
+                <p class="item-price text-muted">90.00$ - 150.00$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-9">
+          <div class="col-md-9">
+            <div class="row">
+              
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="assets/img/shop/products/product1.jpg" alt="Pre Workout" />
+                    <span class="label hot">HOT</span>
+                    <span class="label discount">-42%</span>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-category">Multivitamins</p>
+                    <h5 class="product-title">Bucked Up Racked</h5>
+                    <div class="product-rating">★★★★★ <span>(1)</span></div>
+                    <div class="product-price">
+                      <span class="new-price">116.00$</span>
+                      <span class="old-price">200.00$</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="assets/img/shop/products/product2.jpg" alt="Pre Workout" />
+                    <span class="label hot">HOT</span>
+                    <span class="label discount">-42%</span>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-category">Multivitamins</p>
+                    <h5 class="product-title">Bucked Up Racked</h5>
+                    <div class="product-rating">★★★★★ <span>(1)</span></div>
+                    <div class="product-price">
+                      <span class="new-price">116.00$</span>
+                      <span class="old-price">200.00$</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="assets/img/shop/products/product3.jpg" alt="Pre Workout" />
+                    <span class="label hot">HOT</span>
+                    <span class="label discount">-42%</span>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-category">Multivitamins</p>
+                    <h5 class="product-title">Bucked Up Racked</h5>
+                    <div class="product-rating">★★★★★ <span>(1)</span></div>
+                    <div class="product-price">
+                      <span class="new-price">116.00$</span>
+                      <span class="old-price">200.00$</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="assets/img/shop/products/product4.jpg" alt="Pre Workout" />
+                    <span class="label hot">HOT</span>
+                    <span class="label discount">-42%</span>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-category">Multivitamins</p>
+                    <h5 class="product-title">Bucked Up Racked</h5>
+                    <div class="product-rating">★★★★★ <span>(1)</span></div>
+                    <div class="product-price">
+                      <span class="new-price">116.00$</span>
+                      <span class="old-price">200.00$</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="assets/img/shop/products/product5.jpg" alt="Pre Workout" />
+                    <span class="label hot">HOT</span>
+                    <span class="label discount">-42%</span>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-category">Multivitamins</p>
+                    <h5 class="product-title">Bucked Up Racked</h5>
+                    <div class="product-rating">★★★★★ <span>(1)</span></div>
+                    <div class="product-price">
+                      <span class="new-price">116.00$</span>
+                      <span class="old-price">200.00$</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="assets/img/shop/products/product6.jpg" alt="Pre Workout" />
+                    <span class="label hot">HOT</span>
+                    <span class="label discount">-42%</span>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-category">Multivitamins</p>
+                    <h5 class="product-title">Bucked Up Racked</h5>
+                    <div class="product-rating">★★★★★ <span>(1)</span></div>
+                    <div class="product-price">
+                      <span class="new-price">116.00$</span>
+                      <span class="old-price">200.00$</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="assets/img/shop/products/product7.jpg" alt="Pre Workout" />
+                    <span class="label hot">HOT</span>
+                    <span class="label discount">-42%</span>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-category">Multivitamins</p>
+                    <h5 class="product-title">Bucked Up Racked</h5>
+                    <div class="product-rating">★★★★★ <span>(1)</span></div>
+                    <div class="product-price">
+                      <span class="new-price">116.00$</span>
+                      <span class="old-price">200.00$</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="assets/img/shop/products/product8.jpg" alt="Pre Workout" />
+                    <span class="label hot">HOT</span>
+                    <span class="label discount">-42%</span>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-category">Multivitamins</p>
+                    <h5 class="product-title">Bucked Up Racked</h5>
+                    <div class="product-rating">★★★★★ <span>(1)</span></div>
+                    <div class="product-price">
+                      <span class="new-price">116.00$</span>
+                      <span class="old-price">200.00$</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="assets/img/shop/products/product9.jpg" alt="Pre Workout" />
+                    <span class="label hot">HOT</span>
+                    <span class="label discount">-42%</span>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-category">Multivitamins</p>
+                    <h5 class="product-title">Bucked Up Racked</h5>
+                    <div class="product-rating">★★★★★ <span>(1)</span></div>
+                    <div class="product-price">
+                      <span class="new-price">116.00$</span>
+                      <span class="old-price">200.00$</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="assets/img/shop/products/product10.jpg" alt="Pre Workout" />
+                    <span class="label hot">HOT</span>
+                    <span class="label discount">-42%</span>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-category">Multivitamins</p>
+                    <h5 class="product-title">Bucked Up Racked</h5>
+                    <div class="product-rating">★★★★★ <span>(1)</span></div>
+                    <div class="product-price">
+                      <span class="new-price">116.00$</span>
+                      <span class="old-price">200.00$</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="assets/img/shop/products/product11.jpg" alt="Pre Workout" />
+                    <span class="label hot">HOT</span>
+                    <span class="label discount">-42%</span>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-category">Multivitamins</p>
+                    <h5 class="product-title">Bucked Up Racked</h5>
+                    <div class="product-rating">★★★★★ <span>(1)</span></div>
+                    <div class="product-price">
+                      <span class="new-price">116.00$</span>
+                      <span class="old-price">200.00$</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-img">
+                    <img src="assets/img/shop/products/product12.jpg" alt="Pre Workout" />
+                    <span class="label hot">HOT</span>
+                    <span class="label discount">-42%</span>
+                  </div>
+                  <div class="product-info">
+                    <p class="product-category">Multivitamins</p>
+                    <h5 class="product-title">Bucked Up Racked</h5>
+                    <div class="product-rating">★★★★★ <span>(1)</span></div>
+                    <div class="product-price">
+                      <span class="new-price">116.00$</span>
+                      <span class="old-price">200.00$</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Load More Section -->
+  <div class="load-more-section text-center mt-5">
+    <p class="text-muted mb-2">Showing 1–12 of 24 item(s)</p>
+    <hr style="width: 120px; margin: 0 auto 20px; border-top: 2px solid #000" />
+    <button class="btn btn-dark px-4 py-2">LOAD MORE</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer mt-5 pt-5">
+
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-3">
+          <h5 class="fw-bold">Contact Us</h5>
+          <p>Rains HQ, Jens Olsens Vej 13, 8200 Aarhus N, Denmark</p>
+          <p>Email: Gymex@domain.com</p>
+          <p>Phone: (+49) 818703 2412</p>
+          <div class="social-icons mt-3">
+            <i class="fa-brands fa-tiktok me-2"></i>
+            <i class="fa-brands fa-twitter me-2"></i>
+            <i class="fa-brands fa-instagram me-2"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <h5 class="fw-bold">Information</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Start a Return</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Jobs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h5 class="fw-bold">About</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Career</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Corporate Governance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-5">
+          <h5 class="fw-bold">Get the latest news sent right to your inbox!</h5>
+          <p>See our latest collections & exclusive offers before the crowd!</p>
+          <form class="d-flex">
+            <input type="email" placeholder="Your email..." class="form-control me-2">
+            <button class="btn text-uppercase fw-bold Subscribe">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center py-3 border-top small">
+      © <span class="text-warning">GYMEX</span> – All Rights Reserved.
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
